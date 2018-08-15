@@ -1,0 +1,7 @@
+f=open("text.txt","r")
+content=f.read(1024)
+print(content)
+print("爱老虎油\n"*30)
+content=f.read()
+print(content)
+f.close()

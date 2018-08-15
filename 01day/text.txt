@@ -1,0 +1,3 @@
+f = open("text.txt","w")
+write("hello,world")
+f.close()
