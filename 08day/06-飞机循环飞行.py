@@ -48,11 +48,13 @@ while True:
 	i += 1
 
 
-	hero_rect.y -=3
+	hero_rect.y -=10
 	#覆盖背景
 	screen.blit(bg,(0,0))
 	screen.blit(hero,hero_rect)
 
+	# if hero_rect.y + hero_rect.height <= 0:
+	# 	hero_rect.y = 700
 	if hero_rect.bottom <= 0:
 		hero_rect.top = 700
 	enemy_group.update()#更新
@@ -68,5 +70,10 @@ while True:
 			exit()
 	pygame.display.update()#更新
 
+	#更新		
+	enemy_group.update()
+	enemy_group.draw(screen)			
+
+	pygame.display.update()
 
 pygame.quit()
