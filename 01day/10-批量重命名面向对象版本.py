@@ -6,9 +6,9 @@ class FileMan():
         #os.chdir(dir)
         #print(os.getcwd())
         for i in files:
-            position = i.rfind(".")
-            newname = i[:position]+"-阿里"+i[position:]
-            oldname = dir+"/"+i#movie/吃鸡.py
+            position = i.rfind(".") #查找内容
+            newname = i[:position]+"-baby"+i[position:] #在查找的内容前面加上-baby
+            oldname = dir+"/"+ i #movie/吃鸡.py
             newname = dir+"/"+newname
             os.rename(oldname,newname)
 
