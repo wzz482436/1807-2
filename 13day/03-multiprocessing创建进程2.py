@@ -16,4 +16,5 @@ time.sleep(2)
 p.terminate() #不管子进程结束没结束,都让子进程停止
 
 for i in range(10):
+	time.sleep(0.5)
 	print("嫖娼")  #属于父进程
