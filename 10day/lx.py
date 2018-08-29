@@ -43,5 +43,5 @@ str = "2018-08-10"
 dt = DateTool.del_date(str)
 dt.print_show()
 '''
-str = "2018-08-10"
+str ="2018-8-27"
 DateTool.del_date(str)
