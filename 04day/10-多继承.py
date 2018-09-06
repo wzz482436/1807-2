@@ -1,6 +1,6 @@
 class A():
     def __init__(self):
-        self.name = 10
+        self.name = "辰辰"
         self.age = 20
 
     def show(self):
@@ -19,5 +19,4 @@ print(c.name)
 print(c.age)
 c.show()
 c.show1()
-print(c.age)
 print(C.__mro__)
